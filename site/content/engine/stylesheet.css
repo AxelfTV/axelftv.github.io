@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(5, 5, 46);
+}
+#console{
+    width: 420px;
+    height: 600px;
+    background-color: gray;
+    position: relative;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+}
+#screen{
+    height: 400px;
+    width: 400px;
+    left: 10px;
+    top:10px;
+    background-color: antiquewhite;
+    position: absolute;
+}
+#menu{
+    height: 400px;
+    width: 400px;
+    left: 10px;
+    top:10px;
+    background-color: antiquewhite;
+    position: absolute;
+}
+.entity{
+    position: absolute;
+}
+.entity img{
+    height: 100%
+}
+#a_button{
+    left:280px;
+    top:480px;
+    position: absolute;
+}
+#b_button{
+    left:320px;
+    top:480px;
+    position: absolute;
+}
+#left_button{
+    left:80px;
+    top:480px;
+    position: absolute;
+}
+#right_button{
+    left:120px;
+    top:480px;
+    position: absolute;
+}
+#up_button{
+    left:102px;
+    top:457px;
+    position: absolute;
+}
+#down_button{
+    left:95px;
+    top:503px;
+    position: absolute;
+}
+#pause_button{
+    left:30px;
+    top:550px;
+    position: absolute;
+}
+#continue_button{
+    left: 50%;
+    top:50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+#new_game_button{
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+#menu_image{
+    height: 400px;
+    width: 400px;
+    top:0;
+    left:0;
+    position:absolute;
+}
+#scoreText{
+    left: 50%;
+    top: 400px;
+    font-size: 12px;
+    font-family: monospace;
+    transform: translateX(-50%);
+    position: absolute;
+    white-space:nowrap;
+}
