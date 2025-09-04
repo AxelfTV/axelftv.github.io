@@ -1,6 +1,18 @@
 body {
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Pixelify Sans",sans-serif;
+    color: white;
+    font-size: larger;
+    background-color: darkgreen;
+}
+.background{
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    width: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: -1;
 }
 /*Home page map background*/
 #map-background {
@@ -10,8 +22,8 @@ body {
     will-change: transform;
 }
 .map-svg image {
-  image-rendering: pixelated;
-  image-rendering: crisp-edges; /* fallback for some browsers */
+    image-rendering: pixelated;
+    image-rendering: crisp-edges; /* fallback for some browsers */
 }
 .map-svg {
     width: 100%;
@@ -38,16 +50,46 @@ body {
     right:0;
     z-index: 2;
 }
+#content h1{
+    padding-left: 15%;
+}
 .ff-box{
     position: relative;
     background-color: darkblue;
     border: 5px solid white;
     outline: 2px solid gray;
     border-radius: 3px;
-    width: 30%;
+    width: 50%;
     margin: 10%;
     padding-left: 50px;
     color: white;
+    margin-top: 75%;
+}
+.ff-box p{
+    padding:3%;
+}
+.ff-navbar{
+    position: absolute;
+    transform: translate(-100%, 0%);
+    left: 80%;
+    padding-right: 2%;
+    width: fit-content;
+    margin-top: 5%;
+}
+.ff-box a{
+    color: white;
+}
+.ff-box a:hover{
+    color:lightgray;
+}
+.ff-navbar ul{
+    padding:0%;
+    list-style-type: none;
+}
+.ff-navbar li{
+    position:relative;
+    padding-top:10%;
+    padding-bottom:10%;
 }
 .pointer{
     position: absolute;
@@ -56,4 +98,9 @@ body {
     image-rendering: pixelated;
     image-rendering: crisp-edges;
     width:50px;
+}
+.ff-navbar .pointer{
+    top:10%;
+    left: -20%;
+    transform: translate(-100%, 0%);
 }
