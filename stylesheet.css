@@ -3,11 +3,11 @@ body {
     font-family: "Pixelify Sans",sans-serif;
     color: white;
     font-size: larger;
-    background-image: url("images/lowerrezmaptest.png");
+    background-image: url("images/map-background.png");
     background-repeat: no-repeat;
     background-size: cover; /* scale to fill screen */
     background-position: top center;
-    background-color: darkgreen;
+    background-color: #3e8948;
     image-rendering: pixelated;
 }
 /*Home page map background*/
@@ -70,7 +70,9 @@ body {
     clear: both;
 }
 .ff-box p{
-    padding:3%;
+    padding-top:3%;
+    padding-right: 5%;
+    
 }
 .ff-box .pointer{
     display: none;
