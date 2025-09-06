@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rory Lyons - University Projects</title>
+    <title>Rory Lyons - Javascript Game Engine</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
 </head>
 <body>
     <div id="content">
-        <H1>RORY LYONS - UNIVERSITY PROJECTS</H1>
+        <H1>RORY LYONS - JAVASCRIPT GAME ENGINE</H1>
         <div class="ff-box ff-navbar">
             
             <nav>
@@ -34,8 +34,30 @@
         <div class="ff-box">
             <image class="pointer" src="../../images/pointer.png"></image>
             <h2>JAVASCRIPT GAME ENGINE</h2>
-            <iframe style="align-self: center;margin: 10%;" height="700" width="450" src="https://axelftv.github.io/content/snake/snake.html"></iframe>
+            <p>
+                The goal of this project was to create a library from scratch that I 
+                could use to build games entirely out of HTML5 elements implemented 
+                in javascript. I modelled the engine code off of my prior experience 
+                using game engines such as unity, therefore some of the code resembles 
+                methods you might see when using such game engines.
+                <br><br>
+                The engine centres around a core update loop which iterates over all entities 
+                that currently exist. I created an entity class which is intended to be used 
+                as a parent class for all objects inside of the game. Animation sprites are 
+                stored in a folder and the references to these sprites are stored in a json file 
+                where they are ordered by the animations that they are a part of. 
+                <br><br>
+                An example game is playable at the bottom of this page. The game is a version of snake. 
+                Although this is a very simple example which doesnt take advantage of animation for 
+                most of the sprites (excluding the apple), more complex games are possible and the engine 
+                itself has plenty of room for expansion. Such as supporting UI elements and a more sophisticated 
+                saving and loading implementation to allow for more complex levels inside of the engine.
+                <br><br>
+                The code can be viewed <a target="_blank" href="https://github.com/AxelfTV/Javascript-Game-Engine">here.</a>
+            </p>
         </div>
+        <iframe class="js-game-engine"style="margin: 10%;" height="700" width="450" src="https://axelftv.github.io/content/snake/snake.html"></iframe>
+        
     </div>
 </body>
 </html>

@@ -50,6 +50,13 @@ body {
 #content h1{
     padding-left: 15%;
 }
+.scroll-text{
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 3%;
+    transform: translate(-50%, 0%)
+}
 .ff-box{
     position: relative;
     background-color: darkblue;
@@ -84,6 +91,16 @@ body {
     float:right;
     width: 30%;
     margin: 3%;
+    border-radius:3px;
+    border: 5px solid white;
+    background-color: gray;
+    box-shadow: -3px 3px black;
+}
+.ff-big-image{
+    width: 80%;
+    display: block;
+    margin: auto;
+    translate: -25px 0;
     border-radius:3px;
     border: 5px solid white;
     background-color: gray;
@@ -134,4 +151,9 @@ body {
     left: -20%;
     transform: translate(-100%, 0%);
     display: block;
+}
+.js-game-engine{
+    border: 5px solid white;
+    outline: 2px solid gray;
+    border-radius: 3px;
 }
