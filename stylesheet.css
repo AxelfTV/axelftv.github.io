@@ -149,7 +149,7 @@ body {
 }
 .ff-navbar .pointer{
     top:10%;
-    left: -20%;
+    left: -30%;
     transform: translate(-100%, 0%);
     display: block;
 }
@@ -185,7 +185,7 @@ body {
 }
 .ff-navbar .pointer{
     top: -5px;
-    left: -5%;
+    left: -3%;
     transform: translate(-100%, 0%);
     display: block;
 }
