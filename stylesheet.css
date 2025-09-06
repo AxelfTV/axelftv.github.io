@@ -157,3 +157,46 @@ body {
     outline: 2px solid gray;
     border-radius: 3px;
 }
+@media (max-width: 900px) {
+  .ff-box{
+    width: 75%;
+    align-content: center;
+  }
+    .ff-navbar{
+    position: relative;
+    transform: translate(0%, 0%);
+    padding: 0%;
+    padding-left: 50px;
+    width: 75%;
+    align-content: center;
+    margin: 5% 10%;
+    left:0;
+    }
+  
+  .ff-navbar ul{
+    list-style-type:square;
+}
+
+.ff-navbar li{
+    position:relative;
+    padding-top:0%;
+    padding-bottom:0%;
+}
+.ff-navbar .pointer{
+    top: -5px;
+    left: -5%;
+    transform: translate(-100%, 0%);
+    display: block;
+}
+.ff-image{
+    float: none;
+    width: 80%;
+}
+.ff-iframe{
+    float:none;
+    width: 80%;
+}
+.scroll-text{
+    display: none;
+}
+}
