@@ -221,8 +221,7 @@ body {
 
 .ff-navbar li{
     position:relative;
-    padding-top:0%;
-    padding-bottom:0%;
+    padding: 2% 0;
 }
 .ff-navbar .pointer{
     top: -5px;
