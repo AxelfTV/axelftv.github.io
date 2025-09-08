@@ -80,7 +80,6 @@ body {
 .ff-box p{
     padding-top:3%;
     padding-right: 5%;
-    
 }
 .ff-box .pointer{
     display: none;
@@ -121,7 +120,7 @@ body {
 .ff-navbar{
     position: absolute;
     transform: translate(-100%, 0%);
-    left: 80%;
+    left: 85%;
     padding-right: 2%;
     width: fit-content;
     margin-top: 5%;
@@ -193,11 +192,17 @@ body {
 }
 .ff-image{
     float: none;
-    width: 80%;
+    width: 70%;
+    display: block;
+    margin:auto;
+    margin-top: 5%;
 }
 .ff-iframe{
     float:none;
-    width: 80%;
+    width: 70%;
+    display: block;
+    margin:auto;
+    margin-top: 5%;
 }
 .scroll-text{
     display: none;
