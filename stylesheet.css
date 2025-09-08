@@ -166,6 +166,12 @@ body {
     margin: 5% 10%;
     left:0;
   }
+  .ff-box p{
+    padding-left: 5%;
+  }
+  .ff-box h2{
+    padding-left: 5%;
+  }
     .ff-navbar{
     position: relative;
     transform: translate(0%, 0%);
