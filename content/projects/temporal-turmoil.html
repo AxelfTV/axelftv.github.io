@@ -37,10 +37,50 @@
             <image class="pointer" src="../../images/pointer.png"></image>
             <image class="ff-image" src="../../images/temporalturmoil.png"></image>
             <h2>TEMPORAL TURMOIL</h2>
+            <p>
+                View on <a target="_blank" href="https://axelftv.itch.io/temporal-turmoil">itch</a>.
+            </p>
             
-            <ul>
-                <li>Available on <a target="_blank" href="https://axelftv.itch.io/the-little-picture">itch.io</a></li>
-            </ul>
+            <p>
+                The goal for this twine project was to create a puzzle game scenario where the player has to figure out the
+                correct sequence of events that must unfold in order to escape a crisis. I chose a sci-fi setting for the game
+                where the player is a pilot alone on his personal ship cruising through space.
+            </p>
+            <p>
+                At the beginning the player wakes up and steps out into the main hallway of his ship. The player is then
+                presented with several locations they can choose to explore. At each of these locations there are various
+                things the player can engage with which affect the current state of the play through. Once the player has
+                explored a certain number of locations a warning message will appear forcing the player into the ending
+                sequence of the game. There is very little choice in this sequence as the ending you get is determined by
+                your decisions during the exploration phase of the game. The player will find themselves presented with
+                disaster until suddenly a strange machine in their ship activates seemingly sending them back in time to the
+                beginning of the story.
+
+            </p>
+            <h3>Narrative Structure</h3>
+            <image class="ff-big-image" src="../../images/twine-story-structure.png"></image>
+            <p>
+                The overall structure of the game is that of a time loop. A large inspiration for this project was the game ‘The
+                Outer Wilds’. Similarly to how that game functions, the player must figure out how to successfully break out
+                of the time loop. Within the time loop, the game is split into two sections. The first section mostly resembles
+                the open map narrative structure in which the player is presented with various areas that they can
+                somewhat freely explore. After the player has explored a certain amount, or performed a time consuming
+                action, the game bottlenecks and begins the second portion of the game. This section more closely
+                resembles the time cave narrative structure, although the player actually has virtually no choice in this
+                section as the ending they receive is entirely dependent on their exploration in the first portion of the game.
+            </p>
+            <p>
+                This is achieved through the use of state tracking. Various actions inside the game result in a variable being
+                set to true for that particular loop. For example the player can choose to put their jacket on while exploring
+                the kitchen area. This then provides the player with access to their key card which allows them to explore
+                the storage bay area of the ship. These variables are all reset at the beginning of a time loop with the
+                exception of one. The strange machine located on the ship is the device which facilitates the time loops that
+                the player experiences. Therefore it is possible to save certain information into this machine to have access
+                to it in later loops. The player must perform this to successfully achieve the good ending.
+            </p>
+            <p>
+                View on <a target="_blank" href="https://axelftv.itch.io/temporal-turmoil">itch</a>.
+            </p>
         </div>
     </div>
 

@@ -134,6 +134,7 @@ body {
     border: 5px solid white;
     background-color: gray;
     box-shadow: -3px 3px black;
+    margin-bottom: 5%;
 }
 .ff-iframe{
     float:right;
@@ -144,6 +145,17 @@ body {
     border: 5px solid white;
     background-color: gray;
     box-shadow: -3px 3px black;
+}
+.ff-big-iframe{
+    width: 80%;
+    display: block;
+    margin: auto;
+    translate: 0 0;
+    border-radius:3px;
+    border: 5px solid white;
+    background-color: gray;
+    box-shadow: -3px 3px black;
+    margin-bottom: 5%;
 }
 .ff-navbar{
     position: absolute;
