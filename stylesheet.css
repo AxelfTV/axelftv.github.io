@@ -248,7 +248,11 @@ body {
     display: none;
 }
 .start-button{
+    height: 50%;
     font-size: large;
+}
+.start-button:hover .pointer{
+    display:none;
 }
 }
 .hidden{
