@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="map-background">
-        <svg class="map-svg" viewBox="0 0 1000 2500">
+        <svg class="map-svg" viewBox="0 0 1000 3000">
             <image href="images/map-background.png" x="0" y="0" width="100%" preserveAspectRatio="xMidYMid slice" />
             <!-- Markers -->
             <circle class="map-marker" cx="200" cy="750" r="0" fill="red"/>
@@ -35,15 +35,16 @@
 
     <div id="content">
         <H1>RORY LYONS - HOME</H1>
-        <p class="scroll-text">- scroll down -</p>
-        <div class="ff-box ff-navbar">
+        <p class="scroll-text hidden" id="scroll-text">- scroll down -</p>
+        <div class="ff-box ff-navbar hidden" id="home-nav">
             
             <nav>
                 <ul>
                     <li>
-                        <image class="pointer" src="images/pointer.png"></image>
+                        <image class="pointer" src="../images/pointer.png"></image>
                         <a href="home.html">HOME</a>
                     </li>
+                    <li><a href="/content/about.html">ABOUT</a></li>
                     <li><a href="content/portfolio.html">PORTFOLIO</a></li>
                     <li><a href="content/university.html">UNIVERSITY</a></li>
                     <li><a target="_blank" href="content/Rory_Lyons_CV.pdf">CV</a></li>
@@ -51,58 +52,10 @@
                 </ul>
             </nav>
         </div>
-        <div class="ff-box">
+        <button class="start-button" id="start-button">
             <image class="pointer" src="images/pointer.png"></image>
-            <iframe class="ff-iframe"src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
-            <h2>ABOUT ME</h2>
-            
-            <p>
-                Game developer with a strong foundation in problem-solving and
-                computational thinking, holding an undergraduate degree in Mathematics and
-                a Master’s in Interactive Digital Media from Trinity’s School of Computer
-                Science. Experienced in designing and implementing gameplay systems,
-                procedural content generation, and immersive player experiences. Active
-                participant in multiple game jams, delivering innovative, playable prototypes
-                under tight deadlines, alongside personal and collaborative projects spanning
-                physics-based simulations, narrative puzzles, and shader-driven visuals.
-                <br><br>
-                <a href="content/portfolio.html">view more</a>
-            </p>
-        </div>
-        <div class="ff-box" style="margin-top:40%">
-            <h2><a href="content/portfolio.html">My Projects</a></h2>
-            <image class="pointer" src="images/pointer.png"></image>
-            <p>
-                A collection of games that I have worked on. These projects encompass my work 
-                as both a programmer and a designer and showcases my broad range of skills. I have 
-                a proven track record of well recieved projects through my high performing game 
-                jam entries. My work on larger scale projects is visible through the 3D platforming 
-                adventure, "The Little Picture", where I worked as both a game designer and lead programmer.
-                <br><br>
-                <a href="content/portfolio.html">view more</a>
-            </p>
-        </div>
-        <div class="ff-box" style="margin-top:40%">
-            <image class="pointer" src="images/pointer.png"></image>
-            <h2><a href="content/university.html">University Projects</a></h2>
-            <p>
-                A collection of my more research and technical focused projects, including my research papers 
-                on both game programming and game design, written as part of my various university degree 
-                courses, both of which recieved the highest grade of a first class honours.
-                <br><br>
-                <a href="content/university.html">view more</a>
-            </p>
-        </div>
-        <div class="ff-box" style="margin-top:40%">
-            <image class="pointer" src="images/pointer.png"></image>
-            <h2><a href="content/contact.html">Contact Me</a></h2>
-            <p>
-                Please reach out to me on any of the platforms I am active on which can be found 
-                by clicking below.
-                <br><br>
-                <a href="content/contact.html">view more</a>
-            </p>
-        </div>
+            Start
+        </button>
     </div>
 </body>
 </html>

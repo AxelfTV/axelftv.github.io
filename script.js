@@ -1,4 +1,13 @@
 window.addEventListener("DOMContentLoaded", () => {
+  //start button
+  document.getElementById("start-button").onclick = function() {
+    console.log("start");
+    document.getElementById("start-button").classList.add("hidden");
+    document.getElementById("home-nav").classList.remove("hidden");
+    document.getElementById("scroll-text").classList.remove("hidden");
+  };
+
+  //path stuff
   const path = document.querySelector("path");
   const markers = Array.from(document.querySelectorAll(".map-marker"));
   const char = document.querySelector(".map-character");

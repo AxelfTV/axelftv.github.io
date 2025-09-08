@@ -52,12 +52,39 @@ body {
 #content h1{
     padding-left: 15%;
 }
+.start-button{
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 200%;
+    transform: translate(-50%, 0%);
+    width: 15%;
+    height: 100%;
+    background-color: darkblue;
+    border: 5px solid white;
+    outline: 2px solid gray;
+    border-radius: 3px;
+    color:white;
+    font-family: "Jersey 15",sans-serif;
+    font-size: xx-large;
+}
+.start-button .pointer{
+    display: none;
+    top: 30%;
+}
+.start-button:hover{
+    background-color: midnightblue;
+}
+.start-button:hover .pointer{
+    display: block;
+}
+
 .scroll-text{
     display: block;
     left: 50%;
     position: absolute;
     top: 3%;
-    transform: translate(-50%, 0%)
+    transform: translate(-50%, 0%);
 }
 .ff-box{
     position: relative;
@@ -150,7 +177,7 @@ body {
     width:50px;
 }
 .ff-navbar .pointer{
-    top:10%;
+    top:0%;
     left: -45%;
     transform: translate(-100%, 0%);
     display: block;
@@ -220,4 +247,10 @@ body {
 .scroll-text{
     display: none;
 }
+.start-button{
+    font-size: large;
+}
+}
+.hidden{
+    display:none;
 }
