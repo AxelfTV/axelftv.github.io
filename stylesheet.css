@@ -69,14 +69,14 @@ body {
     font-size: xx-large;
 }
 .start-button .pointer{
-    opacity: 0;
+    visibility: hidden;
     top: 30%;
 }
 .start-button:hover{
     background-color: midnightblue;
 }
 .start-button:hover .pointer{
-    opacity: 1;
+    visibility: visible;
 }
 
 .scroll-text{
@@ -96,6 +96,7 @@ body {
     margin: 5% 10%;
     padding: 0 5%;
     color: white;
+    box-sizing: border-box
 }
 .ff-box:nth-of-type(2){
     margin-top: 10%;
@@ -109,10 +110,11 @@ body {
     padding-top:3%;
 }
 .ff-box .pointer{
-    opacity: 0;
+    position: absolute;
+    visibility: hidden;
 }
 .ff-box:hover .pointer{
-    opacity: 1;
+    visibility: visible;
 }
 .ff-image{
     float:right;
@@ -173,20 +175,20 @@ body {
     width: 60%;
 }
 .ff-home-nav:hover .pointer{
-    opacity: 0;
+    visibility: hidden;
 }
 .ff-home-nav ul{
     columns:2;
 }
 .ff-home-nav li .pointer{
-    opacity: 0;
+    visibility: hidden;
     position: absolute;
     left: -20px;
     top:60%;
     transform: translate(-100%, -50%);
 }
 .ff-home-nav li:hover .pointer{
-    opacity: 1;
+    visibility: visible;
 }
 .ff-box a{
     color: white;
@@ -212,11 +214,11 @@ body {
     width:50px;
 }
 .ff-navbar .pointer{
+    position: absolute; 
     top:80%;
     left: -45%;
     transform: translate(-100%, -50%);
-    display: block;
-    opacity: 1;
+    visibility: visible;
 }
 .js-game-engine{
     border: 5px solid white;
@@ -270,13 +272,12 @@ body {
     top: 60%;
     left: -10%;
     transform: translate(-100%, -50%);
-    display: block;
 }
 .ff-home-nav li{
     padding-top:10%;
 }
 .ff-home-nav li .pointer{
-    opacity: 0;
+    visibility: hidden;
     position: absolute;
     left: -20px;
     top:60%;
@@ -304,8 +305,7 @@ body {
     font-size: large;
 }
 .start-button .pointer{
-    display: block;
-    opacity: 1;
+    visibility: visible;
     left: -70px;
     top: 0px;
 }
