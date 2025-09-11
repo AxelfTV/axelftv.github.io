@@ -225,6 +225,7 @@ body {
     outline: 2px solid gray;
     border-radius: 3px;
 }
+
 @media (max-width: 1100px) {
   .ff-box{
     position:relative;
@@ -260,6 +261,8 @@ body {
     list-style-type:none;
     padding:0 5%;
     columns: 2;
+    position: relative;
+    height: 130px;
 }
 
 .ff-navbar li{
@@ -269,11 +272,11 @@ body {
 .ff-navbar .pointer{
     position: absolute;
     top: 25px;
-    left: -10%;
+    left: -10px;
     height: 50px;
     width: 50px;
     transform: translate(-100%, -50%);
-}
+}   
 .ff-home-nav li{
     padding-top:10%;
 }
@@ -309,6 +312,15 @@ body {
     visibility: visible;
     left: -70px;
     top: 0px;
+}
+}
+@media (min-width: 600px) and (max-width: 1100px){
+    .ff-navbar ul{
+    list-style-type:none;
+    padding:0 5%;
+    columns: 2;
+    position: relative;
+    height: 200px;
 }
 }
 .hidden{
