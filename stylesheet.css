@@ -173,8 +173,20 @@ body {
     left: 0;
     width: 60%;
 }
+.ff-home-nav:hover .pointer{
+    display: none;
+}
 .ff-home-nav ul{
     columns:2;
+}
+.ff-home-nav li .pointer{
+    display:none;
+    position: absolute;
+    left: -20px;
+    top:30%;
+}
+.ff-home-nav li:hover .pointer{
+    display:block;
 }
 .ff-box a{
     color: white;
