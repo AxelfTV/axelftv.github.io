@@ -267,6 +267,9 @@ body {
     transform: translate(-100%, -50%);
     display: block;
 }
+.ff-home-nav li{
+    padding-top:10%;
+}
 .ff-home-nav li .pointer{
     opacity: 0;
     position: absolute;
