@@ -56,8 +56,8 @@ body {
     display: block;
     left: 50%;
     position: absolute;
-    top: 200%;
-    transform: translate(-50%, 0%);
+    top: 50vh;
+    transform: translate(-50%, -50%);
     width: 15%;
     height: 100%;
     background-color: darkblue;
@@ -164,6 +164,17 @@ body {
     padding-right: 2%;
     width: fit-content;
     margin-top: 5%;
+}
+.ff-home-nav{
+    position: relative;
+    transform: translate(0, 0);
+    margin: auto;
+    margin-top: 5%;
+    left: 0;
+    width: 60%;
+}
+.ff-home-nav ul{
+    columns:2;
 }
 .ff-box a{
     color: white;
