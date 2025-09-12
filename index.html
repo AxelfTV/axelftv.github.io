@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rory Lyons - Home</title>
+
+    <link rel="icon" type="image/x-icon" href="images/pointer.png">
+
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="map-background">
+        <svg class="map-svg" viewBox="0 0 1000 3000">
+            <image href="images/map-background.png" x="0" y="0" width="100%" preserveAspectRatio="xMidYMid slice" />
+            <!-- Markers -->
+            <circle class="map-marker" cx="200" cy="750" r="0" fill="red"/>
+            <circle class="map-marker" cx="650" cy="1000" r="0" fill="blue"/>
+            <circle class="map-marker" cx="200" cy="1680" r="0" fill="green"/>
+            <circle class="map-marker" cx="750" cy="2350" r="0" fill="orange"/>
+            <!--
+            <circle class="map-marker" cx="70" cy="2700" r="10" fill="red"/>
+            <circle class="map-marker" cx="700" cy="3300" r="10" fill="blue"/>
+            -->
+            
+
+            <!-- Path starts at first marker -->
+            <path d="M 0 0" stroke="#000000" fill="none" stroke-width="4" stroke-dasharray="10"/>
+        </svg>
+
+        <!-- Character -->
+        <img class="map-character" src="images/charmage.png"> 
+    </div>
+
+    <div id="content">
+        <H1>RORY LYONS</H1>
+        <!--<p class="scroll-text hidden" id="scroll-text">- scroll down -</p>-->
+        <div class="ff-box ff-navbar ff-home-nav hidden" id="home-nav">
+            
+            <nav>
+                <h3>- SELECT FILE -</h3>
+                <ul>
+                    <li>
+                        <img class="pointer" src="images/pointer.png">
+                        <a href="/content/about.html">PROFILE</a>
+                    </li>
+                    <li>
+                        <img class="pointer" src="images/pointer.png">
+                        <a target="_blank" href="content/Rory_Lyons_CV.pdf">STATS</a>
+                    </li>
+                    <li>
+                        <img class="pointer" src="images/pointer.png">
+                        <a href="content/portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <img class="pointer" src="images/pointer.png">
+                        <a href="content/contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <button class="start-button" id="start-button">
+            <img class="pointer" src="images/pointer.png">
+            Start
+        </button>
+    </div>
+</body>
+</html>
