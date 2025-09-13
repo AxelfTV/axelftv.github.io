@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rory Lyons - Ocean Diorama</title>
+
+    <link rel="icon" type="image/x-icon" href="../../images/pointer.png">
+
+    <link rel="stylesheet" type="text/css" href="../../stylesheet.css">
+</head>
+<body>
+    <!--
+    <div id="map-background">
+        <svg class="map-svg" viewBox="0 0 1000 2500">
+        </svg>
+    </div>
+    -->
+    <div id="content">
+        <H1>RORY LYONS - WEB APP BACKEND</H1>
+        <div class="ff-box ff-navbar">
+            
+            <nav>
+                <ul>
+                    <li>
+                        <img class="pointer invisible" src="../images/pointer.png">
+                        <a href="../../home.html">MENU</a>
+                    </li>
+                    <li>
+                        <img class="pointer invisible" src="../images/pointer.png">
+                        <a href="../about.html">PROFILE</a>
+                    </li>
+                    <li>
+                        <img class="pointer" src="../../images/pointer.png">
+                        <a href="../portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li>
+                        <img class="pointer invisible" src="../images/pointer.png">
+                        <a target="_blank" href="../Rory_Lyons_CV.pdf">STATS</a>
+                    </li>
+                    <li>
+                        <img class="pointer invisible" src="../images/pointer.png">
+                        <a href="../contact.html">CONTACT</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="ff-box">
+            <img class="pointer" src="../../images/pointer.png">
+            <h2>WEB APP BACKEND</h2>
+            <p>
+                View on <a target="_blank" href="https://github.com/AxelfTV/Programming-Sem2-Project">Github</a>.
+            </p>
+            <p>
+                My work on this project consists only of the code located in the backend folder and 
+                also of the TypeScript code located in the Components/api folder inside of the frontend 
+                folder.
+            </p>
+            <h3>Designing the Database</h3>
+            <img class="ff-big-image" src="../../images/dbdiagram.png">
+            <p>
+                The first step in developing this web app was creating a schema for the database. I created 
+                this layout before starting work on the codebase to ensure a clean structure for the API. The 
+                schema contains tables for user account data, and a structure for the routes system that I had designed. 
+                The purpose of the app was to be a social media site where users could select predefined walking routes 
+                which would take them to various scenic places in dublin. At each location the user would have the option 
+                to upload an image. Once the walking route had been completed these images would be collected in a post on 
+                their profile feeds. 
+                <br><br>
+                The locations that routes consisted of were stored in the locations table, while the route_locations table 
+                defined which locations would be a part of a given route. When a user began a walking route the API would create 
+                a new route_instance which would be added to the database. This route would have a status element which ensures 
+                that a user cannot have more than one active route at a time. When a route_instance is finished, the user would 
+                have the option to create a post connected to that instance which would link to the images uploaded as part 
+                of that instance. 
+            </p>
+            <h3>Creating the API</h3>
+            <img class="ff-big-image" src="../../images/apicode.png">
+            <p>
+                The next step was to implement the backend functionality. I split the backend into four sections 
+                for the various routes that the website would require. One was to handle requests related to user 
+                data, one handled the created and updating of the apps routes and route instances, one handled 
+                image uploading and finally one handled content feeds. Each of these four sections were further split 
+                into a routes script, a controller script, and a service script which each handled different parts of 
+                the API's functionality. the routes script contained the various requests that could be made the API, the 
+                controller script controlled how data was processed and what data would be sent back to the user, and finally 
+                the service script would handle the direct interactions with the database.
+                <br><br>
+                I also implemented password encryption inside the user service script at this stage for user accounts.
+            </p>
+            <h3>Linking to the Frontend</h3>
+            <img class="ff-big-image" src="../../images/frontendlink.png">
+            <p>
+                The final step was linking the frontend to the backend. I created a series of functions in TypeScript 
+                that my collaborators could use to build the functionaliy of the web application. This consisted of 
+                functions which would utilize one or more requests to the API to return data structures that would 
+                fill content on the various pages of the site. 
+                <br><br>
+                I also implemented image uploading and storage where images 
+                would be sent to the server hosting the backend and be stored in an uploads folder and the file location of that 
+                image would then be stored inside of the database along with information about its upload.
+            </p>
+            <p>
+                View on <a target="_blank" href="https://github.com/AxelfTV/Programming-Sem2-Project">Github</a>.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
